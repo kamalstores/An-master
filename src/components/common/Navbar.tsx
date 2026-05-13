@@ -64,21 +64,17 @@ export const Navbar = () => {
             href="/"
             className="flex items-center space-x-2 sm:space-x-3 group"
           >
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-glass-bg flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden bg-glass-bg flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
               <Image
-                src="/images/logo.svg"
-                alt="logo"
-                width={40}
-                height={40}
-                placeholder="blur"
+                src="/images/logo.png"
+                alt="Kamal Sharma logo"
+                width={48}
+                height={48}
                 loading="lazy"
                 quality={100}
-                blurDataURL={`${createBlurDataURL({
-                  width: 40,
-                  height: 40,
-                })}`}
                 style={{
                   objectFit: "cover",
+                  borderRadius: "50%",
                 }}
               />
             </div>

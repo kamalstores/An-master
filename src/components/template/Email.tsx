@@ -37,9 +37,9 @@ export function EmailTemplate({
       icon: "https://cdn-icons-png.flaticon.com/512/145/145807.png",
     },
     {
-      name: "LeetCode",
-      url: `https://leetcode.com/${selfData.socials_username.leetcode}`,
-      icon: "https://cdn.iconscout.com/icon/free/png-256/leetcode-3521542-2944960.png",
+      name: "X / Twitter",
+      url: `https://x.com/${selfData.socials_username.twitter}`,
+      icon: "https://cdn-icons-png.flaticon.com/512/5968/5968830.png",
     },
     {
       name: "Instagram",
@@ -47,9 +47,9 @@ export function EmailTemplate({
       icon: "https://cdn-icons-png.flaticon.com/512/2111/2111463.png",
     },
     {
-      name: "X",
-      url: `https://x.com/${selfData.socials_username.twitter}`,
-      icon: "https://cdn-icons-png.flaticon.com/512/5968/5968830.png",
+      name: "Telegram",
+      url: `https://t.me/${selfData.socials_username.telegram}`,
+      icon: "https://cdn-icons-png.flaticon.com/512/2111/2111646.png",
     },
   ];
 
