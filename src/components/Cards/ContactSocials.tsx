@@ -8,19 +8,8 @@ import { FaGithub, FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa6"
 
 import { selfData } from "@/constant";
 
-// Custom Codolio SVG icon (not available in react-icons)
-const CodolioIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    width="20"
-    height="20"
-    aria-label="Codolio"
-  >
-    <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 3a7 7 0 1 1 0 14A7 7 0 0 1 12 5zm-1.5 3.5v1.75A3.5 3.5 0 0 0 12 17a3.5 3.5 0 0 0 3.5-3.5 3.5 3.5 0 0 0-3.5-3.5v1.5a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2v-3l-1.5.5V8.5H10.5z" />
-  </svg>
-);
+// Import FaCode for Codolio
+import { FaCode } from "react-icons/fa6";
 
 type SocialLink = {
   icon: IconType | (() => React.ReactElement);
@@ -62,7 +51,7 @@ export const ContactSocials = () => {
       initial: -10,
     },
     {
-      icon: CodolioIcon,
+      icon: FaCode,
       link: `https://codolio.com/profile/${selfData.socials_username.codolio}`,
       label: "Codolio",
       initial: 10,
@@ -70,7 +59,7 @@ export const ContactSocials = () => {
   ];
 
   return (
-    <ul className="flex flex-wrap mt-12 gap-4">
+    <ul className="flex flex-wrap gap-4 mt-2">
       {socialLinks.map((social, index) => {
         const IconComponent = social.icon;
         return (

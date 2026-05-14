@@ -258,50 +258,7 @@ export const ContactFormCard = () => {
               </motion.div>
             </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 30, scale: 0.95 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{
-                duration: 0.6,
-                delay: 0.5,
-                type: "spring",
-                stiffness: 150,
-                damping: 12,
-              }}
-              whileHover={{ scale: 1.02, y: -2 }}
-            >
-              <select
-                required
-                name="reasonToContact"
-                onChange={handleChange}
-                value={formValues.reasonToContact}
-                className="w-full px-4 py-3 text-sm rounded-xl backdrop-blur-xl border transition-all duration-300 outline-none focus:ring-2 focus:ring-primary/50 hover:border-primary/30"
-                style={{
-                  color: "hsl(var(--foreground))",
-                  background: "hsl(var(--glass-bg))",
-                  borderColor: "hsl(var(--glass-border))",
-                }}
-              >
-                <option className="text-black" value="General inquries">
-                  General Inquiries
-                </option>
-                <option className="text-black" value="Project inquiries">
-                  Project Inquiries
-                </option>
-                <option className="text-black" value="Collaboration request">
-                  Collaboration Request
-                </option>
-                <option className="text-black" value="Feedback/Question">
-                  Feedback/Question
-                </option>
-                <option className="text-black" value="Bug report">
-                  Bug Report
-                </option>
-                <option className="text-black" value="Feature request">
-                  Feature Request
-                </option>
-              </select>
-            </motion.div>
+
 
             <motion.div
               initial={{ opacity: 0, y: 30, scale: 0.95 }}

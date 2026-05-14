@@ -52,8 +52,7 @@ export const Contact = () => {
               className="space-y-4"
             >
               <h3
-                className="text-xl md:text-2xl font-semibold mb-6 font-mono"
-                style={{ color: "hsl(var(--foreground))" }}
+                className="text-xl md:text-2xl font-semibold mb-6 font-mono text-white drop-shadow-md"
               >
                 Get In Touch
               </h3>
@@ -67,8 +66,7 @@ export const Contact = () => {
               transition={{ duration: 0.7, delay: 0.4 }}
             >
               <h3
-                className="text-xl md:text-2xl font-semibold mb-6 font-mono"
-                style={{ color: "hsl(var(--foreground))" }}
+                className="text-xl md:text-2xl font-semibold mb-2 font-mono text-white drop-shadow-md"
               >
                 Socials . . .
               </h3>
@@ -111,9 +109,9 @@ const ContactItem: React.FC<ContactItemProps> = ({
         >
           <Icon className="w-6 h-6" style={{ color: "hsl(var(--primary))" }} />
         </motion.div>
-        <div className="flex-1">
-          <p className="text-sm text-muted/80 mb-1">{label}</p>
-          <p className="font-medium group-hover:text-primary transition-colors duration-300">
+        <div className="flex-1 drop-shadow-md">
+          <p className="text-sm text-slate-300 mb-1">{label}</p>
+          <p className="font-medium text-white group-hover:text-primary transition-colors duration-300">
             {value}
           </p>
         </div>

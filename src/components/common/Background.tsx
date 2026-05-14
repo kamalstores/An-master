@@ -83,7 +83,7 @@ export const Background = () => {
           "#0d9488", // Vibrant Teal
           "#1e1b4b"  // Dark Indigo
         ]}
-        speed={0.2}
+        speed={0.8}
       />
 
       {/* Premium Noise Grain Overlay */}

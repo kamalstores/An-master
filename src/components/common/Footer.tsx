@@ -82,15 +82,16 @@ export const Footer = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 200, damping: 10 }}
             >
-              <Image
-                src="/images/logo.svg"
-                alt="Logo"
-                width={40}
-                height={40}
-                loading="lazy"
-                sizes="40px"
-                className="w-10 h-10 object-contain bg-transparent border border-primary/90 p-1.5 rounded-xl shadow-lg"
-              />
+              <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center border border-primary/30 shadow-lg group-hover:border-primary/60 transition-colors">
+                <Image
+                  src="/images/avatar-logo.png?v=99"
+                  alt="Logo"
+                  width={40}
+                  height={40}
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </motion.span>
             <h3
               className={`${quentine.className} text-2xl font-semibold text-primary`}

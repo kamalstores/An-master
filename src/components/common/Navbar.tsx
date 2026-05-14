@@ -10,7 +10,7 @@ import { RiMenu4Fill, RiCloseLargeFill } from "react-icons/ri";
 import { quentine } from "@/app/fonts";
 
 import { Button } from "../ui/button";
-import { createBlurDataURL } from "@/lib/BlurDataURL";
+
 import { selfData } from "@/constant";
 
 export const Navbar = () => {
@@ -66,7 +66,7 @@ export const Navbar = () => {
           >
             <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden bg-glass-bg flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
               <Image
-                src="/images/logo.png"
+                src="/images/avatar-logo.png?v=99"
                 alt="Kamal Sharma logo"
                 width={48}
                 height={48}
@@ -79,7 +79,7 @@ export const Navbar = () => {
               />
             </div>
             <span
-              className={`${quentine.className} text-primary-foreground text-xl sm:text-base`}
+              className={`${quentine.className} text-white font-bold tracking-wide drop-shadow-md text-xl sm:text-base`}
             >
               {selfData.name}
             </span>

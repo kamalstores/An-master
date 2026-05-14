@@ -16,7 +16,7 @@ import {
 
 export const metadata: Metadata = {
   applicationName: "Kamal Sharma",
-  title: "Kamal Sharma | Full Stack Developer & AI/ML Engineer",
+  title: "Kamal Sharma",
   description:
     "Kamal Sharma is a CS undergrad at NIT Kurukshetra passionate about building full-stack products, solving DSA problems, and exploring AI/ML. Former Accenture intern. Explore his projects and portfolio.",
   authors: [
@@ -66,24 +66,24 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon.ico", sizes: "any" },
+      { url: "/avatar-favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/avatar-favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/avatar-favicon.ico", sizes: "any" },
     ],
-    shortcut: "/favicon.ico",
+    shortcut: "/avatar-favicon.ico",
     apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      { url: "/avatar-apple-touch-icon.png", sizes: "180x180", type: "image/png" },
     ],
     other: [
       {
         rel: "android-chrome-192x192",
-        url: "/android-chrome-192x192.png",
+        url: "/avatar-android-chrome-192x192.png",
         sizes: "192x192",
         type: "image/png",
       },
       {
         rel: "android-chrome-512x512",
-        url: "/android-chrome-512x512.png",
+        url: "/avatar-android-chrome-512x512.png",
         sizes: "512x512",
         type: "image/png",
       },
